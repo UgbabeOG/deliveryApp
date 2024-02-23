@@ -90,6 +90,9 @@ body {
   .navigation {
     display: none;
   }
+  .details-card {
+    flex-wrap: wrap;
+  }
   .navigation.active {
     display: flex;
     flex-direction: column;
@@ -160,7 +163,19 @@ main {
 h1 {
   text-align: center;
 }
+.details-card {
+  margin-top: 16px;
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: #ddd;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
 .deliveryForm {
+  height: 50vh;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -184,10 +199,8 @@ h1 {
 
 .progress {
   height: 100%;
-  -webkit-animation: color-change-2x 2s linear
-    infinite alternate both;
-  animation: color-change-2x 1.5s linear infinite
-    alternate both;
+  -webkit-animation: color-change-2x 2s linear infinite alternate both;
+  animation: color-change-2x 1.5s linear infinite alternate both;
 
   /* background-color: #4caf50; */
   /* Set transition time to 24 hours */
@@ -215,7 +228,7 @@ h1 {
     background: #4caf50;
   }
 }
- 
+
 .details {
   margin-top: 10px;
 }

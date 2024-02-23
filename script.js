@@ -8,9 +8,9 @@ let updater; // Declare updater outside the function scope to make it accessible
 let progress = 0; // Initial progress
 const checkProgress = () => {
   const recipientName = document.getElementById("recipientName").value.toLowerCase();
-  const deliveryAddress = document.getElementById("deliveryAddress").value;
+  const deliveryAddress = document.getElementById("deliveryAddress").value.toLowerCase();
 
-  if (recipientName != "kelly laybutt" || !deliveryAddress != "KL3258JJ") {
+  if (recipientName != "kelly laybutt" || deliveryAddress != "kl3258jj") {
     alert("Recipient not found");
     return;
   }
