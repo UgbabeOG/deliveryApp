@@ -118,10 +118,11 @@ main {
 }
 .progress-value {
   text-align: center;
-  display: block;
 }
 
 .footer {
+  position: fixed;
+  bottom: 0%;
   background-image: linear-gradient(to right, #4caf50, rgb(255, 166, 0));
 
   color: #333;
@@ -195,15 +196,13 @@ h1 {
   height: 10px;
   background-color: #ddd;
   border-radius: 5px;
+  margin-bottom: 16px;
 }
 
 .progress {
   height: 100%;
   -webkit-animation: color-change-2x 2s linear infinite alternate both;
   animation: color-change-2x 1.5s linear infinite alternate both;
-
-  /* background-color: #4caf50; */
-  /* Set transition time to 24 hours */
 }
 
 @-webkit-keyframes color-change-2x {
