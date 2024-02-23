@@ -110,7 +110,7 @@ body {
   }
 }
 main {
-  height: 70vh;
+  height: 100vh;
   margin-bottom: 1rem;
 }
 .delivery-header {
@@ -121,8 +121,10 @@ main {
 }
 
 .footer {
+  right: 0;
+  left: 0;
   position: fixed;
-  bottom: 0%;
+  bottom: 0;
   background-image: linear-gradient(to right, #4caf50, rgb(255, 166, 0));
 
   color: #333;
@@ -169,14 +171,12 @@ h1 {
   display: flex;
   padding: 1rem;
   justify-content: space-between;
-  align-items: center;
-  text-align: center;
   background-color: #ddd;
   border-radius: 6px;
   margin-bottom: 16px;
 }
 .deliveryForm {
-  height: 50vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -203,6 +203,9 @@ h1 {
   height: 100%;
   -webkit-animation: color-change-2x 2s linear infinite alternate both;
   animation: color-change-2x 1.5s linear infinite alternate both;
+}
+#deliveryStatus {
+  height: 80vh;
 }
 
 @-webkit-keyframes color-change-2x {
@@ -247,18 +250,4 @@ button:hover {
 
 .hidden {
   display: none;
-}
-@keyframes color-change-4x {
-  0% {
-    background: #19dcea;
-  }
-  33.3333% {
-    background: #b22cff;
-  }
-  66.666% {
-    background: #ea2222;
-  }
-  100% {
-    background: #f5be10;
-  }
 }
