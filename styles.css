@@ -1,0 +1,252 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  box-sizing: border-box;
+}
+/* Styles for your responsive header and footer */
+
+.header {
+  background-color: #4caf50;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6vh;
+}
+
+.header-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.navigation {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation a {
+  text-decoration: none;
+  padding: 10px 15px;
+  color: #333;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.navigation a:hover {
+  background-color: #ddd;
+}
+.logo-image {
+  height: 4rem;
+}
+
+.welcome-banner {
+  padding: 1rem;
+  background-image: linear-gradient(to right, #4caf50, rgb(255, 166, 0));
+  margin-bottom: 16px;
+  margin-top: 16px;
+  text-align: center;
+}
+.welcome-banner a {
+  text-decoration: none;
+  color: rgb(219, 213, 204);
+}
+.hamburger-menu {
+  display: none; /* Hide initially for larger screens */
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.hamburger-menu span.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin-bottom: 5px;
+  background-color: #333;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hamburger-menu.active span.bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger-menu.active span.bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-menu.active span.bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+@media only screen and (max-width: 768px) {
+  /* Styles for smaller screens */
+
+  .navigation {
+    display: none;
+  }
+  .navigation.active {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hamburger-menu {
+    display: block;
+    left: 0;
+  }
+
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+  }
+}
+main {
+  height: 70vh;
+  margin-bottom: 1rem;
+}
+.delivery-header {
+  text-align: center;
+}
+.progress-value {
+  text-align: center;
+  display: block;
+}
+
+.footer {
+  background-image: linear-gradient(to right, #4caf50, rgb(255, 166, 0));
+
+  color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+.copyright {
+  margin-bottom: 10px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-media li {
+  margin: 0 10px;
+}
+.social-media a {
+  text-decoration: none;
+  color: #4caf50;
+}
+.shadow {
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.container {
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+.deliveryForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.status {
+  font-weight: bold;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+.progress {
+  height: 100%;
+  -webkit-animation: color-change-2x 2s linear
+    infinite alternate both;
+  animation: color-change-2x 1.5s linear infinite
+    alternate both;
+
+  /* background-color: #4caf50; */
+  /* Set transition time to 24 hours */
+}
+
+@-webkit-keyframes color-change-2x {
+  0% {
+    background: #19ea512f;
+  }
+  50% {
+    background: #19ea5171;
+  }
+  100% {
+    background: #4caf50;
+  }
+}
+@keyframes color-change-2x {
+  0% {
+    background: #19ea512f;
+  }
+  50% {
+    background: #19ea5171;
+  }
+  100% {
+    background: #4caf50;
+  }
+}
+ 
+.details {
+  margin-top: 10px;
+}
+
+#track-button,
+#check-progress {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #45a049;
+}
+
+.hidden {
+  display: none;
+}
+@keyframes color-change-4x {
+  0% {
+    background: #19dcea;
+  }
+  33.3333% {
+    background: #b22cff;
+  }
+  66.666% {
+    background: #ea2222;
+  }
+  100% {
+    background: #f5be10;
+  }
+}

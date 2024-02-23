@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuickShip</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <!-- <link rel="stylesheet" href="./all.min.css" /> -->
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <nav class="navigation">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+        </nav>
+
+        <button class="hamburger-menu" aria-label="Open menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </header>
+    <main>
+      <div class="welcome-banner">
+        <a href="#"
+          ><img class="logo-image" src="./fav.jpeg" alt="logo image" />
+          <h1 class="">Ship, Manage, Track, Deliver!</h1>
+        </a>
+      </div>
+      <div class="shadow deliveryForm" id="deliveryForm">
+        <form class="deliveryForm">
+          <h4 class="delivery-header">Track the progress of your package</h4>
+          <label class="label" for="recipientName">Recipient Name:</label>
+          <input type="text" id="recipientName" required />
+
+          <label class="label" for="deliveryAddress">Tracking ID:</label>
+          <input id="deliveryAddress" type="text" required />
+
+          <button type="button" id="check-progress">Track Progress</button>
+        </form>
+      </div>
+
+      <div id="deliveryStatus" class="hidden shadow">
+        <h1>Your Delivery</h1>
+        <p class="status">Order placed!</p>
+        <div class="progress-bar">
+          <div class="progress"></div>
+          <p id="progress-value" class="progress-value"></p>
+        </div>
+        <div class="details-card">
+          <p class="details">
+            Your package is on its way. Estimated delivery in 3 days.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="copyright">
+          © <span id="copyright"></span> QuickShip. All Rights Reserved.
+        </div>
+        <ul class="social-media">
+          <li>
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram-square"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="/script.js" defer></script>
+    <script src="./all.min.js" defer></script>
+  </body>
+</html>
