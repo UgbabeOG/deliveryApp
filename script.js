@@ -10,7 +10,7 @@ const checkProgress = () => {
   const recipientName = document.getElementById("recipientName").value.toLowerCase();
   const deliveryAddress = document.getElementById("deliveryAddress").value.toLowerCase();
 
-  if (recipientName != "kelly laybutt" || deliveryAddress != "kl3258jj") {
+  if (recipientName !== "kelly laybutt" || deliveryAddress !== "kl3258jj") {
     alert("Recipient not found");
     return;
   }
@@ -20,7 +20,7 @@ const checkProgress = () => {
 };
 const incrementProgress = () => {
   // Increment progress by 25%
-  progress += 25;
+  progress += 75;
 };
 const updateProgress = () => {
   // Check for existing progress in localStorage
@@ -31,7 +31,7 @@ const updateProgress = () => {
     const progressValue = document.getElementById("progress-value");
     progressValue.textContent = `${progress.toString()}%`;
   } else {
-    progress += 25; // Increment progress by 25%
+    progress += 75; // Increment progress by 25%
     progressBar.style.width = `${progress}%`;
     progressValue.textContent = `${progress.toString()}%`;
 
