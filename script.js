@@ -31,7 +31,7 @@ const updateProgress = () => {
     const progressValue = document.getElementById("progress-value");
     progressValue.textContent = `${progress.toString()}%`;
   } else {
-    progress += 75; // Increment progress by 25%
+    progress += 25; // Increment progress by 25%
     progressBar.style.width = `${progress}%`;
     progressValue.textContent = `${progress.toString()}%`;
 
