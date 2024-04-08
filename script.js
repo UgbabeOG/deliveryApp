@@ -10,7 +10,7 @@ const checkProgress = () => {
   const recipientName = document.getElementById("recipientName").value.toLowerCase();
   const deliveryAddress = document.getElementById("deliveryAddress").value.toLowerCase();
 
-  if (recipientName !== "kelly laybutt" || deliveryAddress !== "kl3258jj") {
+  if (recipientName !== "michael long" || deliveryAddress !== "kl3258jj") {
     alert("Recipient not found");
     return;
   }
@@ -20,7 +20,7 @@ const checkProgress = () => {
 };
 const incrementProgress = () => {
   // Increment progress by 25%
-  progress += 75;
+  progress += 25;
 };
 const updateProgress = () => {
   // Check for existing progress in localStorage
